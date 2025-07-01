@@ -23,9 +23,9 @@ jobs:
       contents: read
     steps:
       - name: "Build the virtual environment for ${{ github.repository }}"
-        uses: tschm/cradle/actions/environment@v0.1.72
+        uses: tschm/cradle/actions/environment@v0.1.73
 
-      - uses: tschm/cradle/actions/pdoc@v0.1.72  # Generate API documentation
+      - uses: tschm/cradle/actions/pdoc@v0.1.73  # Generate API documentation
         with:
           source-folder: 'cvxrisk'
   test:
@@ -35,9 +35,9 @@ jobs:
       contents: read
     steps:
       - name: "Build the virtual environment for ${{ github.repository }}"
-        uses: tschm/cradle/actions/environment@v0.1.72
+        uses: tschm/cradle/actions/environment@v0.1.73
 
-      - uses: tschm/cradle/actions/coverage@v0.1.72  # Run tests and generate coverage reports
+      - uses: tschm/cradle/actions/coverage@v0.1.73  # Run tests and generate coverage reports
         with:
           source-folder: cvxrisk
           tests-folder: tests
@@ -49,9 +49,9 @@ jobs:
       contents: read
     steps:
       - name: "Build the virtual environment for ${{ github.repository }}"
-        uses: tschm/cradle/actions/environment@v0.1.72
+        uses: tschm/cradle/actions/environment@v0.1.73
 
-      - uses: tschm/cradle/actions/jupyter@v0.1.72  # Process Jupyter notebooks
+      - uses: tschm/cradle/actions/jupyter@v0.1.73  # Process Jupyter notebooks
 
   book:
     # Combine all documentation and publish to GitHub Pages
@@ -64,4 +64,4 @@ jobs:
       id-token: write         # Permission to verify deployment origin
 
     steps:
-      - uses: tschm/cradle/actions/book@v0.1.72  # Build and publish the documentation book
+      - uses: tschm/cradle/actions/book@v0.1.73  # Build and publish the documentation book
