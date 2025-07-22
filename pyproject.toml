@@ -4,7 +4,7 @@ name = "cvxrisk"
 version = "0.0.0"
 description = "Simple riskengine for cvxpy"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 # List of core dependencies required for the package to function
 dependencies = [
     "cvxpy-base>=1.5.0",   # Core convex optimization modeling framework
